@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141519;
+    height: 100vh;
+}
+
+.ratingCard {
+    background-color: #1f2630;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.iconContainer{
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262f3a;
+}
+
+.ratingTitle {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.ratingDescription {
+    width: 95%;
+    line-height: 24px;
+    color: #89919c;
+    margin-bottom: 20px;
+}
+
+
+.ratingButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.ratingButton {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #89919c;
+    background-color: #282f39;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ratingButton:hover {
+    background-color: #fc7613;
+    color: black;
+}
+
+.ratingButton.active {
+    background-color: white;
+    color: black;
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.submitButton:hover {
+    background-color: white;
+}
+
+
+.thankYouImage {
+    position: absolute;
+    width: 150px;
+    top: 140px;
+    display: none;
+}
+
+.selectedRating {
+    position: absolute;
+    top: 270px;
+    padding: 10px;
+    background-color: #373f4b;
+    color: #fc7612;
+    border-radius: 10px;
+    width:200px;
+    text-align: center;
+    display: none;
+    margin-left: 80px;
+}
+
+.thankYouTitle {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    top: 330px;
+    margin-left: 95px;
+
+}
+
+.thankYouMessage {
+    text-align: center;
+    color: #a5a6a7;
+    line-height: 24px;
+    display: none;
+    position: absolute;
+    bottom: 150px;
+    width: 29%;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.extraContainer {
+    display: none;
+}
+
+
+.submitButton {
+    background-color: #fc7612;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+
+@media (min-width: 841px) and (max-width: 1290px) {
+
+.ratingCard{
+    height: 490px;
+    padding:20px
+}
+
+.ratingTitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ratingDescription {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.ratingButtons {
+    margin: 20px 0;
+    margin-top: 50px;
+}
+
+.thankYouImage {
+    top: 10rem;
+}
+
+.selectecdRating {
+    top: 19rem;
+}
+
+.thankYouTitle {
+    top: 22rem;
+
+}
+
+.thankYouMessage {
+    top: 28rem;
+    width: 30%;
+    padding-left: 10px;
+
+}
+
+}
+
+
+@media (min-width: 601px) and (max-width: 840px) {
+   
+.ratingCard{
+    height: 490px;
+    padding:20px
+}
+
+.ratingTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ratingDescription {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.ratingButtons {
+    margin: 20px 0;
+    margin-top: 50px;
+}
+
+.thankYouImage {
+    top: 22rem;
+}
+
+.selectedRating {
+    top: 30rem;
+}
+
+.thankYouTitle {
+    top: 33rem;
+
+}
+
+.thankYouMessage {
+    bottom: 24rem;
+    width: 40%;
+    padding-left: 40px;
+
+}
+
+}   
+
+
+@media(max-width: 600px){
+
+
+
+.ratingCard {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    height: 500px;
+}
+    
+.ratingTitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ratingDescription {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.ratingButtons {
+    margin: 20px 0;
+    margin-top:  5px;
+}
+
+.thankYouImage {
+    top: 10rem;
+}
+
+.selectedRating {
+    top: 19rem;
+    margin-left: 35px;
+}
+
+.thankYouTitle {
+    top: 22rem;
+    margin-bottom: 40px;
+    margin-left: 50px;
+
+}
+
+.thankYouMessage {
+    bottom: 12rem;
+    width: 80%;
+    margin-right: 15px;
+}
+
+.submitButton  {
+    padding: 12px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+}
+
+
+@media(max-width: 330px){
+
+.ratingCard {
+    max-width: 85%;
+
+    padding-bottom: 40px;
+    height: 400px;
+}
+    
+.ratingTitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ratingDescription {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.ratingButtons {
+    margin: 20px 0;
+    margin-top:  5px;
+}
+
+.thankYouImage {
+    top: 3em;
+}
+
+.selectedRating {
+    top: 11rem;
+    margin-left: 20px;
+}
+
+.thankYouTitle {
+    top: 14rem;
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+
+.thankYouMessage {
+    top: 19rem;
+    width: 80%;
+    margin-right: 15px;
+}
+
+.submitButton {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: -10px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
