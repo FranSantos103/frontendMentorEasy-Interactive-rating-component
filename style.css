@@ -23,6 +23,8 @@ body {
     height: 420px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
 }
 
 button:hover {
@@ -85,9 +87,8 @@ button:hover {
 }
 
 .submitContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
+
 }
 
 .submitButton:hover {
@@ -154,7 +155,7 @@ button:hover {
     letter-spacing: 2px;
     font-weight: bold;
     transition: 0.3s;
-    margin-top: 50px;
+
 }
 
 
@@ -162,7 +163,11 @@ button:hover {
 
 .ratingCard{
     height: 490px;
-    padding:20px
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .ratingTitle {
@@ -196,9 +201,15 @@ button:hover {
 .thankYouMessage {
     top: 28rem;
     width: 30%;
-    padding-left: 10px;
+    padding-left: 20px;
 
 }
+
+.submitButton {
+    padding: 12px;
+    margin-bottom: -70px;
+}
+
 
 }
 
