@@ -55,10 +55,17 @@ function showMessage() {
 
     submitBtn.style.zIndex = '-2'
 
-    selectedRating.style.display = 'flex'
+
+
     selectedRating.style.zIndex = '4'
-    selectedRating.style.alignItems = 'center'
+
+
+ selectedRating.style.display = 'flex'
+       selectedRating.style.alignItems = 'center'
+    
     selectedRating.style.justifyContent = 'center'
+   
+ 
 
     thankYouTitle.style.display = 'flex'
     thankYouTitle.style.zIndex = '4'

@@ -23,34 +23,38 @@ body {
     height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 
 }
+
 
 button:hover {
     cursor: pointer;
 }
 
 .iconContainer{
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    background-color: #262f3a;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #262f3a;
+
 }
 
 .ratingTitle {
     color: white;
     font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-right: 10rem;
 }
 
 .ratingDescription {
+    margin-top: 30px;
     width: 95%;
     line-height: 24px;
     color: #89919c;
@@ -58,11 +62,13 @@ button:hover {
 }
 
 
+
 .ratingButtons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    gap: 20px;
 }
 
 .ratingButton {
@@ -99,7 +105,7 @@ button:hover {
 .thankYouImage {
     position: absolute;
     width: 150px;
-    top: 140px;
+    top: 175px;
     display: none;
 }
 
@@ -111,27 +117,25 @@ button:hover {
     width:200px;
     text-align: center;
     display: none;
-    margin-left: 80px;
+    margin-top: 9rem;
 }
 
 .thankYouTitle {
     text-align: center;
     color: white;
     font-size: 2rem;
-    margin-top: 20px;
+    margin-top: 30px;
     display: none;
 }
 
 .thankYouMessage {
     text-align: center;
     color: #a5a6a7;
-    line-height: 24px;
+    line-height: 30px;
     display: none;
-    position: absolute;
-    bottom: 150px;
-    width: 29%;
+    width: 99%;
     text-align: center;
-    padding-right: 30px;
+    margin-top: 20px;
 }
 
 .extraContainer {
@@ -141,7 +145,7 @@ button:hover {
 
 .submitButton {
     background-color: #fc7612;
-    width: 100%;
+    width: 20rem;
     padding: 12px;
     border-radius: 20px;
     border: none;
@@ -153,25 +157,46 @@ button:hover {
 }
 
 
-@media (min-width: 841px) and (max-width: 1290px) {
+@media (min-width: 885px) and (max-width: 1270px) {
 
 .ratingCard{
     height: 490px;
     padding:20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
 
 }
 
+
+.iconContainer{
+    margin-top: -10px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #262f3a;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .ratingTitle {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 5rem;
+    width: 100vw;
+    margin-left: 45rem;
 }
 
 .ratingDescription {
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 90px;
 }
 
 .ratingButtons {
@@ -208,7 +233,11 @@ button:hover {
 }
 
 
-@media (min-width: 601px) and (max-width: 840px) {
+@media (min-width: 601px) and (max-width: 884px) {
+
+ .thankYouImage {
+    top: 22rem;
+}
    
 .ratingCard{
     height: 490px;
@@ -218,6 +247,8 @@ button:hover {
 .ratingTitle {
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 10rem;
+    width: 100%;
 }
 
 .ratingDescription {
@@ -227,16 +258,29 @@ button:hover {
 
 .ratingButtons {
     margin: 20px 0;
-    margin-top: 50px;
+    margin-top: 5px;
+
 }
 
 .thankYouMessage {
-    width: 40%;
-    padding-left: 40px;
+    width: 90%;
+}
+
+
+.selectecdRating {
+position: absolute;
+ right: 56px;
+}
+
+.submitButton {
+    margin-bottom: 20px;
 
 }
 
+
+
 }   
+
 
 
 @media(max-width: 600px){
@@ -244,21 +288,24 @@ button:hover {
 
 
 .ratingCard {
+    position: relative;
     max-width: 85%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-bottom: 30px;
     height: 500px;
 }
     
 .ratingTitle {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
 }
 
 .ratingDescription {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .ratingButtons {
@@ -267,26 +314,60 @@ button:hover {
 }
 
 .thankYouTitle {
-    margin-bottom: 40px;
-    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 
 }
 
 .thankYouMessage {
     width: 80%;
-    margin-right: 15px;
+    margin-right: 0px;
 }
 
 .submitButton  {
     padding: 12px;
     letter-spacing: 2px;
     margin-top: 10px;
+    width: 15rem;
 }
+
+.thankYouImage {
+    margin: auto;
+}
+
+.selectecdRating {
+position: absolute;
+right: 100px;
+}
+
+
+
 
 }
 
 
 @media(max-width: 330px){
+
+
+.ratingCard {
+    background-color: #1f2630;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.iconContainer{
+        margin-bottom: 3rem;
+    }
 
 .ratingCard {
     max-width: 85%;
@@ -295,41 +376,95 @@ button:hover {
 }
     
 .ratingTitle {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .ratingDescription {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
+
+
 .ratingButtons {
-    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top:  5px;
+    gap: 8px;
 }
+
+.ratingButton {
+    width: 41px;
+    height: 41px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .thankYouImage {
     top: 3em;
 }
 
-.selectedRating {
-    margin-left: 20px;
-}
-
 .thankYouTitle {
-    margin-bottom: 40px;
-    margin-left: 35px;
+    margin-bottom: 3px;
 }
 
 .thankYouMessage {
-    width: 80%;
-    margin-right: 15px;
+    width: 95%;
+    font-size: 0.8rem;
 }
 
 .submitButton {
     display: block;
-    width: 100%;
+    width:10rem;
     padding: 8px;
     margin-top: -10px;
 }
